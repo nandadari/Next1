@@ -1,5 +1,6 @@
 import ProductView from "@/views/product";
 import {ProductType} from "../../type/product.type";
+import { revalidateEvents } from "swr/dist/_internal";
 
 const ProductPage = (props: {products: ProductType[]}) => {
     const {products} = props;
@@ -20,7 +21,7 @@ export async function getStaticProps() {
         return{
             props: {
                 products: response.data,
-            }
-        }
-    
+            },
+            // revalidate:10
+        };
 }
