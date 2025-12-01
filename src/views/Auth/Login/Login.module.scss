@@ -1,10 +1,50 @@
-@import '@/styles/colors.scss';
-
-.login {
+.login{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
     height: 100vh;
-    background-color: map-get($map: $schema, $key: primary);
+    &__title{
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    &__error{
+        margin-bottom: 10px ;
+        color: #c30000;
+    }
+    &__form{
+    width: 30%;
+    padding: 20px;
+    box-shadow: 0 0 0 3px rgba($color: #000000, $alpha: 0.5) ;
+    margin-bottom: 20px;
+    &__item{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px ;
+        &__input{
+            padding: 10px;
+            background-color: #eee;
+            margin-top: 5px;
+        }
+        &__buttom{
+            background-color: #000000;
+            color: #fff;
+            width: 100%;
+            padding: 10px;
+        }
+        &__google {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+        }
+    }
+
+    &__link{
+        a{
+            color: #3d6ddd ;
+            font-weight: bold;
+        }
+    } 
 }

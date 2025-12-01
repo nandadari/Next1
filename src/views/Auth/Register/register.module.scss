@@ -6,17 +6,22 @@
     width: 100vw;
     height: 100vh;
     &__title{
-        font-size: 32;
-        margin-bottom: 20px;
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    &__error{
+        margin-bottom: 10px ;
+        color: #c30000;
     }
     &__form{
     width: 30%;
+    padding: 20px;
     box-shadow: 0 0 0 3px rgba($color: #000000, $alpha: 0.5) ;
     margin-bottom: 20px;
     &__item{
         display: flex;
         flex-direction: column;
-        margin-bottom: 20px 0;
+        margin-bottom: 20px ;
         &__input{
             padding: 10px;
             background-color: #eee;
@@ -28,7 +33,7 @@
             width: 100%;
             padding: 10px;
         }
-    }
+        }
     }
 
     &__link{
@@ -36,5 +41,5 @@
             color: #3d6ddd ;
             font-weight: bold;
         }
-    }
+    } 
 }
